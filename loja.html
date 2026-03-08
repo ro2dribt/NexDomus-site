@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexDomus | Loja</title>
+  <meta name="description" content="Loja NexDomus com varios produtos de automacao e seguranca.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body class="page-loja">
+  <header class="site-header" id="main-header">
+    <a class="brand" href="index.html"><img src="img/logo.jpg" alt="NexDomus"><span>NexDomus</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Inicio</a><a href="servicos.html">Servicos</a><a href="projetos.html">Projetos</a><a class="active" href="loja.html">Loja</a><a href="planos.html">Planos</a><a href="sobre.html">Sobre</a><a href="contacto.html">Contacto</a><a id="auth-link" href="login.html">Login</a><button class="nav-button hidden" id="logout-btn" type="button">Logout</button><a class="cart-link" href="carrinho.html">Carrinho <span class="cart-count">0</span></a><a class="pill" href="orcamento.html">Pedir orcamento</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <article class="hero-main panel reveal">
+        <p class="eyebrow">E-commerce NexDomus</p>
+        <h1>Escolhe e compra os teus dispositivos online.</h1>
+        <p class="lead">Faz login, adiciona ao carrinho e conclui a compra simulada. Todos os produtos podem incluir instalacao.</p>
+      </article>
+      <aside class="hero-side panel reveal">
+        <h2>Categorias</h2>
+        <ul>
+          <li>Iluminacao inteligente</li>
+          <li>Seguranca e sensores</li>
+          <li>Conforto e energia</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head"><h2>Catalogo completo</h2></div>
+      <div class="grid-4">
+        <article class="card product-card"><h3>Tomada Smart S1</h3><p class="product-code">COD: ND-101</p><p>Monitorizacao de consumo em tempo real.</p><p class="product-price">39.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-101" data-name="Tomada Smart S1" data-price="39.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Interruptor Touch T2</h3><p class="product-code">COD: ND-102</p><p>Comando por app e voz para luzes.</p><p class="product-price">49.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-102" data-name="Interruptor Touch T2" data-price="49.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Dimmer Inteligente D1</h3><p class="product-code">COD: ND-103</p><p>Regulacao automatica por hora do dia.</p><p class="product-price">44.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-103" data-name="Dimmer Inteligente D1" data-price="44.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Modulo Estores E3</h3><p class="product-code">COD: ND-104</p><p>Abertura inteligente por luminosidade.</p><p class="product-price">79.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-104" data-name="Modulo Estores E3" data-price="79.9" type="button">Adicionar ao carrinho</button></article>
+
+        <article class="card product-card"><h3>Sensor Movimento M1</h3><p class="product-code">COD: ND-105</p><p>Detecao precisa para rotinas e alertas.</p><p class="product-price">29.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-105" data-name="Sensor Movimento M1" data-price="29.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Sensor Abertura A1</h3><p class="product-code">COD: ND-106</p><p>Portas e janelas com notificacao imediata.</p><p class="product-price">24.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-106" data-name="Sensor Abertura A1" data-price="24.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Camara Indoor C2</h3><p class="product-code">COD: ND-107</p><p>Video HD com visao noturna e audio.</p><p class="product-price">119.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-107" data-name="Camara Indoor C2" data-price="119.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Camara Exterior C5</h3><p class="product-code">COD: ND-108</p><p>Resistente a chuva com deteccao de pessoa.</p><p class="product-price">159.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-108" data-name="Camara Exterior C5" data-price="159.9" type="button">Adicionar ao carrinho</button></article>
+
+        <article class="card product-card"><h3>Hub Central H1</h3><p class="product-code">COD: ND-109</p><p>Orquestra todos os dispositivos da casa.</p><p class="product-price">89.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-109" data-name="Hub Central H1" data-price="89.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Termostato Smart T8</h3><p class="product-code">COD: ND-110</p><p>Gestao termica por geolocalizacao.</p><p class="product-price">99.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-110" data-name="Termostato Smart T8" data-price="99.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Valvula Inteligente V2</h3><p class="product-code">COD: ND-111</p><p>Controlo de agua com deteccao de fuga.</p><p class="product-price">69.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-111" data-name="Valvula Inteligente V2" data-price="69.9" type="button">Adicionar ao carrinho</button></article>
+        <article class="card product-card"><h3>Sirene Smart S3</h3><p class="product-code">COD: ND-112</p><p>Alerta sonoro com cenarios de emergencia.</p><p class="product-price">54.90 EUR</p><button class="btn primary" data-add-to-cart data-id="nd-112" data-name="Sirene Smart S3" data-price="54.9" type="button">Adicionar ao carrinho</button></article>
+      </div>
+    </section>
+
+    <section class="cta panel reveal">
+      <h2>Carrinho pronto para checkout</h2>
+      <p>Depois de adicionar produtos, abre o carrinho para ajustar quantidades e finalizar.</p>
+      <a class="btn secondary" href="carrinho.html">Ir para carrinho</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h3>NexDomus</h3><p>Loja com hardware validado pela equipa tecnica.</p></div>
+    <div><a href="login.html">Entrar</a><a href="carrinho.html">Finalizar compra</a><a href="orcamento.html">Instalacao assistida</a></div>
+    <p>&copy; <span id="year"></span> NexDomus.</p>
+  </footer>
+</body>
+</html>

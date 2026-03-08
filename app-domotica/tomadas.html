@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexDomus Control | Tomadas</title>
+  <meta name="description" content="Controlo de tomadas inteligentes por comodos e potencia por equipamento.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="tomadas">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span>NexDomus Control</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Dashboard</a><a href="luzes.html">Luzes</a><a href="tomadas.html">Tomadas</a><a href="ambiente.html">Ambiente</a><a href="consumos.html">Consumos</a><a href="cenas.html">Cenas</a>
+    </nav>
+    <div class="user-tools"><span class="user-name" id="user-name"></span><button class="btn secondary" id="logout-btn" type="button">Sair</button></div>
+  </header>
+
+  <main class="main">
+    <section class="hero panel reveal">
+      <article class="hero-main">
+        <p class="eyebrow">Tomadas Inteligentes</p>
+        <h1>Gestao de cargas por comodos.</h1>
+        <p class="lead">As tomadas agora estao organizadas por divisao para uma leitura mais clara e controlo rapido.</p>
+      </article>
+      <aside class="status-box">
+        <p class="small">Potencia tomada total</p>
+        <h2 id="sockets-power">0 W</h2>
+        <p class="small">Tomadas ligadas: <span id="sockets-active">0</span></p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Sala</p><h2>Entretenimento</h2></div>
+      <div class="grid-2">
+        <article class="card reveal"><div class="room-head"><h3>TV</h3><label class="switch"><input type="checkbox" data-socket-toggle="tv"><span></span></label></div><label>Potencia maxima</label><input type="range" min="50" max="800" step="10" data-socket-watts="tv"><p class="muted">Carga atual: <strong data-socket-value="tv">0 W</strong></p></article>
+        <article class="card reveal"><div class="room-head"><h3>Consola</h3><label class="switch"><input type="checkbox" data-socket-toggle="consola"><span></span></label></div><label>Potencia maxima</label><input type="range" min="30" max="500" step="10" data-socket-watts="consola"><p class="muted">Carga atual: <strong data-socket-value="consola">0 W</strong></p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Cozinha</p><h2>Eletrodomesticos</h2></div>
+      <div class="grid-2">
+        <article class="card reveal"><div class="room-head"><h3>Frigorifico</h3><label class="switch"><input type="checkbox" data-socket-toggle="frigorifico"><span></span></label></div><label>Potencia maxima</label><input type="range" min="80" max="600" step="10" data-socket-watts="frigorifico"><p class="muted">Carga atual: <strong data-socket-value="frigorifico">0 W</strong></p></article>
+        <article class="card reveal"><div class="room-head"><h3>Cafeteira</h3><label class="switch"><input type="checkbox" data-socket-toggle="cafeteira"><span></span></label></div><label>Potencia maxima</label><input type="range" min="100" max="1800" step="50" data-socket-watts="cafeteira"><p class="muted">Carga atual: <strong data-socket-value="cafeteira">0 W</strong></p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Lavandaria</p><h2>Ciclos de lavagem</h2></div>
+      <div class="grid-2">
+        <article class="card reveal"><div class="room-head"><h3>Maquina Roupa</h3><label class="switch"><input type="checkbox" data-socket-toggle="maquina"><span></span></label></div><label>Potencia maxima</label><input type="range" min="200" max="2400" step="50" data-socket-watts="maquina"><p class="muted">Carga atual: <strong data-socket-value="maquina">0 W</strong></p></article>
+        <article class="card reveal"><div class="room-head"><h3>Secadora</h3><label class="switch"><input type="checkbox" data-socket-toggle="secadora"><span></span></label></div><label>Potencia maxima</label><input type="range" min="300" max="2600" step="50" data-socket-watts="secadora"><p class="muted">Carga atual: <strong data-socket-value="secadora">0 W</strong></p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Escritorio</p><h2>Produtividade</h2></div>
+      <div class="grid-2">
+        <article class="card reveal"><div class="room-head"><h3>Setup Escritorio</h3><label class="switch"><input type="checkbox" data-socket-toggle="escritorio"><span></span></label></div><label>Potencia maxima</label><input type="range" min="40" max="600" step="10" data-socket-watts="escritorio"><p class="muted">Carga atual: <strong data-socket-value="escritorio">0 W</strong></p></article>
+        <article class="card reveal"><div class="room-head"><h3>PC Torre</h3><label class="switch"><input type="checkbox" data-socket-toggle="pc"><span></span></label></div><label>Potencia maxima</label><input type="range" min="80" max="900" step="10" data-socket-watts="pc"><p class="muted">Carga atual: <strong data-socket-value="pc">0 W</strong></p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Quarto</p><h2>Carregamento</h2></div>
+      <div class="grid-2">
+        <article class="card reveal"><div class="room-head"><h3>Carregadores</h3><label class="switch"><input type="checkbox" data-socket-toggle="carregadores"><span></span></label></div><label>Potencia maxima</label><input type="range" min="20" max="300" step="10" data-socket-watts="carregadores"><p class="muted">Carga atual: <strong data-socket-value="carregadores">0 W</strong></p></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

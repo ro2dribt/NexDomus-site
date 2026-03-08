@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexDomus Control | Login</title>
+  <meta name="description" content="Login de acesso ao painel domotico NexDomus Control.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="login">
+  <main class="login-wrap reveal">
+    <p class="eyebrow">Acesso Seguro</p>
+    <h1>Entrar no NexDomus Control</h1>
+    <p class="note">E necessario iniciar conta para entrar no painel de controlo.</p>
+    <form id="login-form">
+      <div>
+        <label for="login-name">Nome</label>
+        <input id="login-name" type="text" placeholder="Ex: Rodrigo Silva" required>
+      </div>
+      <div>
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" placeholder="nome@email.com" required>
+      </div>
+      <button class="btn primary" type="submit">Entrar</button>
+      <a class="btn secondary" href="../index.html">Voltar ao site</a>
+    </form>
+  </main>
+</body>
+</html>

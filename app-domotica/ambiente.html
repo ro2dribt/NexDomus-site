@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexDomus Control | Ambiente</title>
+  <meta name="description" content="Controlo de temperatura e estores da habitacao.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="ambiente">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span>NexDomus Control</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Dashboard</a><a href="luzes.html">Luzes</a><a href="tomadas.html">Tomadas</a><a href="ambiente.html">Ambiente</a><a href="consumos.html">Consumos</a><a href="cenas.html">Cenas</a>
+    </nav>
+    <div class="user-tools"><span class="user-name" id="user-name"></span><button class="btn secondary" id="logout-btn" type="button">Sair</button></div>
+  </header>
+
+  <main class="main">
+    <section class="hero panel reveal">
+      <article class="hero-main">
+        <p class="eyebrow">Ambiente</p>
+        <h1>Conforto termico e luminosidade exterior.</h1>
+        <p class="lead">Define temperatura alvo e abertura dos estores com feedback de consumo energetico.</p>
+      </article>
+      <aside class="status-box">
+        <p class="small">Temperatura alvo</p>
+        <h2><span id="temp-value">22</span> C</h2>
+        <p class="small">Estores: <strong data-value="estores">0%</strong></p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <article class="card reveal">
+          <h3>Temperatura interior</h3>
+          <div class="row-inline" style="margin-top:10px;">
+            <button class="btn secondary" type="button" data-temp="down">-</button>
+            <button class="btn secondary" type="button" data-temp="up">+</button>
+          </div>
+          <p class="muted" style="margin-top:10px;">Faixa recomendada: 20 C a 23 C.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Estores eletricos</h3>
+          <label>Posicao</label>
+          <input type="range" min="0" max="100" data-range="estores">
+          <p class="muted">Abertura atual: <strong data-value="estores">0%</strong></p>
+          <button class="btn primary" type="button" id="close-all">Fechar tudo</button>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

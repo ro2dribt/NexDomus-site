@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexDomus Control | Cenas</title>
+  <meta name="description" content="Criacao e gestao de cenas personalizadas para domotica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="cenas">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span>NexDomus Control</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Dashboard</a><a href="luzes.html">Luzes</a><a href="tomadas.html">Tomadas</a><a href="ambiente.html">Ambiente</a><a href="consumos.html">Consumos</a><a href="cenas.html">Cenas</a>
+    </nav>
+    <div class="user-tools"><span class="user-name" id="user-name"></span><button class="btn secondary" id="logout-btn" type="button">Sair</button></div>
+  </header>
+
+  <main class="main">
+    <section class="hero panel reveal">
+      <article class="hero-main">
+        <p class="eyebrow">Cenarios</p>
+        <h1>Criar e aplicar cenas personalizadas.</h1>
+        <p class="lead">As tuas novas cenas ficam guardadas e podem ser aplicadas no dashboard e nesta pagina.</p>
+      </article>
+      <aside class="status-box">
+        <p class="small">Total de cenas</p>
+        <h2 id="scene-count">0</h2>
+        <p class="small">Inclui predefinidas e personalizadas.</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <article class="card reveal">
+          <h3>Criar nova cena</h3>
+          <form id="scene-form" style="margin-top:12px; display:grid; gap:10px;">
+            <div>
+              <label for="scene-name">Nome da cena</label>
+              <input id="scene-name" type="text" placeholder="Ex: Noite Conforto" required>
+            </div>
+            <div class="form-grid">
+              <div><label for="scene-sala">Sala %</label><input id="scene-sala" type="number" min="0" max="100" value="40"></div>
+              <div><label for="scene-cozinha">Cozinha %</label><input id="scene-cozinha" type="number" min="0" max="100" value="20"></div>
+            </div>
+            <div class="form-grid">
+              <div><label for="scene-quarto">Quarto %</label><input id="scene-quarto" type="number" min="0" max="100" value="35"></div>
+              <div><label for="scene-estores">Estores %</label><input id="scene-estores" type="number" min="0" max="100" value="30"></div>
+            </div>
+            <div class="form-grid">
+              <div><label for="scene-temp">Temperatura C</label><input id="scene-temp" type="number" min="16" max="30" value="21"></div>
+              <div>
+                <label>Tomadas ativas</label>
+                <div class="row-inline" style="margin-top:8px;">
+                  <label><input type="checkbox" id="scene-tv" checked> TV</label>
+                  <label><input type="checkbox" id="scene-maquina"> Maquina</label>
+                  <label><input type="checkbox" id="scene-escritorio" checked> Escritorio</label>
+                </div>
+              </div>
+            </div>
+            <button class="btn primary" type="submit">Guardar cena</button>
+          </form>
+        </article>
+
+        <article class="card reveal">
+          <h3>Biblioteca de cenas</h3>
+          <p class="muted" style="margin-top:6px;">Aplicar ou remover cenas personalizadas.</p>
+          <div id="scene-library" class="grid-2" style="margin-top:12px;"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

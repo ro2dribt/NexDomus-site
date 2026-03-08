@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexDomus | Planos</title>
+  <meta name="description" content="Planos de suporte tecnico e manutencao NexDomus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body class="page-planos">
+  <header class="site-header" id="main-header">
+    <a class="brand" href="index.html"><img src="img/logo.jpg" alt="NexDomus"><span>NexDomus</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Inicio</a><a href="servicos.html">Servicos</a><a href="projetos.html">Projetos</a><a href="loja.html">Loja</a><a class="active" href="planos.html">Planos</a><a href="sobre.html">Sobre</a><a href="contacto.html">Contacto</a><a id="auth-link" href="login.html">Login</a><button class="nav-button hidden" id="logout-btn" type="button">Logout</button><a class="cart-link" href="carrinho.html">Carrinho <span class="cart-count">0</span></a><a class="pill" href="orcamento.html">Pedir orcamento</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <article class="hero-main panel reveal">
+        <p class="eyebrow">Suporte e manutencao</p>
+        <h1>Escolhe o nivel de acompanhamento ideal.</h1>
+        <p class="lead">Os planos cobrem monitorizacao, ajustes periodicos e evolucao tecnica do sistema.</p>
+      </article>
+      <aside class="hero-side panel reveal">
+        <h2>Todos os planos incluem</h2>
+        <ul>
+          <li>Canal de suporte remoto</li>
+          <li>Backup de configuracoes</li>
+          <li>Recomendacoes trimestrais</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section reveal">
+      <div class="grid-3">
+        <article class="price"><h3>Base</h3><p class="value">14.90 EUR/mes</p><ul class="feature-list"><li>Resposta em horario comercial</li><li>1 manutencao trimestral</li><li>Atualizacoes guiadas</li></ul></article>
+        <article class="price featured"><h3>Plus</h3><p class="value">29.90 EUR/mes</p><ul class="feature-list"><li>Prioridade de resposta</li><li>Ajustes mensais de automacao</li><li>Relatorio de consumo</li></ul></article>
+        <article class="price"><h3>Pro</h3><p class="value">49.90 EUR/mes</p><ul class="feature-list"><li>Suporte estendido</li><li>Diagnostico em 24h</li><li>Roadmap anual de upgrades</li></ul></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h3>NexDomus</h3><p>Planos para manter tudo estavel ao longo do tempo.</p></div>
+    <div><a href="contacto.html">Falar com consultor</a><a href="orcamento.html">Solicitar proposta</a><a href="carrinho.html">Carrinho</a></div>
+    <p>&copy; <span id="year"></span> NexDomus.</p>
+  </footer>
+</body>
+</html>
